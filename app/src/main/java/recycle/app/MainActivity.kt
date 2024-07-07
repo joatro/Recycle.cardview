@@ -21,7 +21,7 @@ class MainActivity : AppCompatActivity(), BookClickListener
 
         val mainActivity = this
         binding.recyclerView.apply {
-            layoutManager = GridLayoutManager(applicationContext, 3)
+            layoutManager = GridLayoutManager(applicationContext, 2)
             adapter = CardAdapter(bookList, mainActivity)
         }
     }
@@ -82,22 +82,10 @@ class MainActivity : AppCompatActivity(), BookClickListener
         )
         bookList.add(book6)
 
-        val book7 = Book(
-            R.drawable.wyam,
-            "Michael Robotham",
-            "WHEN YOU ARE MINE",
-            "Philomena McCarthy has defied the odds and become a promising young officer with the Metropolitan Police despite being the daughter of a notorious London gangster. Called to the scene of a domestic assault one day, she rescues a bloodied young woman, Tempe Brown, the mistress of a decorated detective. The incident is hushed up, but Phil has unwittingly made a dangerous enemy with powerful friends.\n"
-        )
-        bookList.add(book7)
 
 
-        bookList.add(book1)
-        bookList.add(book2)
-        bookList.add(book3)
-        bookList.add(book4)
-        bookList.add(book5)
-        bookList.add(book6)
-        bookList.add(book7)
+
+
     }
 
 
